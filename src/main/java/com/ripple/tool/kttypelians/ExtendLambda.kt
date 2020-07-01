@@ -60,9 +60,30 @@ typealias PairLambda<F, S> = PairReturnLambda<F, S, Unit>
 typealias TripleReturnLambda<F, S, T, R> = ((first: F?, second: S?, third: T?) -> R)?
 
 /**
- * 有返回值的三个参数回调
+ * 三个参数回调
  */
 typealias TripleLambda<F, S, T> = TripleReturnLambda<F, S, T, Unit>
+
+/**
+ * 有返回值的四个参数回调
+ */
+typealias QuadraReturnLambda<F, S, T, O, R> = ((first: F?, second: S?, third: T?, fourth: O?) -> R)?
+
+/**
+ * 四个参数回调
+ */
+typealias QuadraLambda<F, S, T, O> = QuadraReturnLambda<F, S, T, O, Unit>
+
+/**
+ * 有返回值的五个参数回调
+ */
+typealias PentaReturnLambda<F, S, T, O, I, R> = ((first: F?, second: S?, third: T?, fourth: O?, fifth: I?) -> R)?
+
+/**
+ * 五个参数回调
+ */
+typealias PentaLambda<F, S, T, O, I> = PentaReturnLambda<F, S, T, O, I, Unit>
+
 
 /**
  * 进度回调
